@@ -130,19 +130,31 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Beneficios para tu pyme</h3>
-      <ul class="space-y-2 text-muted">
-        <li>• Automatización de procesos en Chile – Reducción de errores, ahorro de tiempo, mayor eficiencia</li>
-        <li>• Software a medida para pymes – Control total, datos centralizados, reportes automáticos</li>
-        <li>• Soluciones digitales personalizadas – Ventas 24/7, alcance nacional, menos costos fijos</li>
-        <li>• Aplicaciones móviles para Chile – Acceso móvil, mejor experiencia, mayor engagement</li>
-        <li>• Migración a la nube en Chile – Seguridad mejorada, escalabilidad, menos mantenimiento</li>
-        <li>• Soporte técnico en Chile – Funcionamiento 24/7, actualizaciones automáticas, soporte técnico local</li>
-      </ul>
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Beneficios para tu pyme</h3>
+      <div class="space-y-4">
+        <div class="p-4 bg-white/80 dark:bg-slate-800/80 rounded-lg backdrop-blur-sm border border-blue-100 dark:border-slate-700">
+          <p class="text-gray-700 dark:text-gray-300">• <span class="font-semibold text-blue-600 dark:text-blue-400">Automatización de procesos en Chile</span> – Reducción de errores, ahorro de tiempo, mayor eficiencia</p>
+        </div>
+        <div class="p-4 bg-white/80 dark:bg-slate-800/80 rounded-lg backdrop-blur-sm border border-purple-100 dark:border-slate-700">
+          <p class="text-gray-700 dark:text-gray-300">• <span class="font-semibold text-purple-600 dark:text-purple-400">Software a medida para pymes</span> – Control total, datos centralizados, reportes automáticos</p>
+        </div>
+        <div class="p-4 bg-white/80 dark:bg-slate-800/80 rounded-lg backdrop-blur-sm border border-green-100 dark:border-slate-700">
+          <p class="text-gray-700 dark:text-gray-300">• <span class="font-semibold text-green-600 dark:text-green-400">Soluciones digitales personalizadas</span> – Ventas 24/7, alcance nacional, menos costos fijos</p>
+        </div>
+        <div class="p-4 bg-white/80 dark:bg-slate-800/80 rounded-lg backdrop-blur-sm border border-orange-100 dark:border-slate-700">
+          <p class="text-gray-700 dark:text-gray-300">• <span class="font-semibold text-orange-600 dark:text-orange-400">Aplicaciones móviles para Chile</span> – Acceso móvil, mejor experiencia, mayor engagement</p>
+        </div>
+        <div class="p-4 bg-white/80 dark:bg-slate-800/80 rounded-lg backdrop-blur-sm border border-indigo-100 dark:border-slate-700">
+          <p class="text-gray-700 dark:text-gray-300">• <span class="font-semibold text-indigo-600 dark:text-indigo-400">Migración a la nube en Chile</span> – Seguridad mejorada, escalabilidad, menos mantenimiento</p>
+        </div>
+        <div class="p-4 bg-white/80 dark:bg-slate-800/80 rounded-lg backdrop-blur-sm border border-red-100 dark:border-slate-700">
+          <p class="text-gray-700 dark:text-gray-300">• <span class="font-semibold text-red-600 dark:text-red-400">Soporte técnico en Chile</span> – Funcionamiento 24/7, actualizaciones automáticas, soporte técnico local</p>
+        </div>
+      </div>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50 dark:from-slate-900 dark:via-blue-900/20 dark:to-purple-900/20"></div>
     </Fragment>
   </Content>
 
@@ -178,28 +190,61 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">¿Por qué elegirnos?</h3>
-      <p class="text-muted mb-4">Soluciones digitales personalizadas para pymes chilenas. Democratizar la tecnología para pymes.</p>
-      
-      <h4 class="text-lg font-semibold mb-2">Industrias atendidas:</h4>
-      <ul class="space-y-2 text-muted mb-4">
-        <li>• Logística Chile – Sistemas de tracking y gestión de flotas</li>
-        <li>• Retail Nacional – E-commerce y gestión de inventarios</li>
-        <li>• Manufactura – Automatización de procesos productivos</li>
-        <li>• Servicios – Software de gestión empresarial</li>
-      </ul>
+      <div class="bg-white/90 dark:bg-slate-800/90 p-8 rounded-2xl backdrop-blur-sm border border-gray-200 dark:border-slate-700 shadow-xl">
+        <h3 class="text-3xl font-bold tracking-tight mb-4 bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent">¿Por qué elegirnos?</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-6 text-lg leading-relaxed">Soluciones digitales personalizadas para pymes chilenas. Democratizar la tecnología para pymes.</p>
+        
+        <div class="grid gap-6 mb-6">
+          <div class="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 p-4 rounded-lg border-l-4 border-blue-500">
+            <h4 class="text-lg font-semibold mb-3 text-gray-900 dark:text-white flex items-center">
+              <span class="w-2 h-2 bg-blue-500 rounded-full mr-3"></span>
+              Industrias atendidas:
+            </h4>
+            <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+              <li class="flex items-center"><span class="text-blue-500 mr-2">🚚</span> Logística Chile – Sistemas de tracking y gestión de flotas</li>
+              <li class="flex items-center"><span class="text-purple-500 mr-2">🛍️</span> Retail Nacional – E-commerce y gestión de inventarios</li>
+              <li class="flex items-center"><span class="text-green-500 mr-2">🏭</span> Manufactura – Automatización de procesos productivos</li>
+              <li class="flex items-center"><span class="text-orange-500 mr-2">💼</span> Servicios – Software de gestión empresarial</li>
+            </ul>
+          </div>
 
-      <h4 class="text-lg font-semibold mb-2">Nuestro proceso:</h4>
-      <ol class="space-y-2 text-muted">
-        <li>1. Diagnóstico – analizamos tus procesos</li>
-        <li>2. Propuesta – diseñamos solución digital</li>
-        <li>3. Desarrollo – construimos tu solución</li>
-        <li>4. Soporte – acompañamiento continuo</li>
-      </ol>
+          <div class="bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 p-4 rounded-lg border-l-4 border-purple-500">
+            <h4 class="text-lg font-semibold mb-3 text-gray-900 dark:text-white flex items-center">
+              <span class="w-2 h-2 bg-purple-500 rounded-full mr-3"></span>
+              Nuestro proceso:
+            </h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+              <div class="flex items-center bg-white/60 dark:bg-slate-700/60 p-3 rounded-lg">
+                <span class="flex-shrink-0 w-8 h-8 bg-blue-100 dark:bg-blue-900 text-blue-600 dark:text-blue-400 rounded-full flex items-center justify-center font-bold text-sm mr-3">1</span>
+                <span class="text-gray-700 dark:text-gray-300 text-sm">Diagnóstico – analizamos tus procesos</span>
+              </div>
+              <div class="flex items-center bg-white/60 dark:bg-slate-700/60 p-3 rounded-lg">
+                <span class="flex-shrink-0 w-8 h-8 bg-purple-100 dark:bg-purple-900 text-purple-600 dark:text-purple-400 rounded-full flex items-center justify-center font-bold text-sm mr-3">2</span>
+                <span class="text-gray-700 dark:text-gray-300 text-sm">Propuesta – diseñamos solución digital</span>
+              </div>
+              <div class="flex items-center bg-white/60 dark:bg-slate-700/60 p-3 rounded-lg">
+                <span class="flex-shrink-0 w-8 h-8 bg-green-100 dark:bg-green-900 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center font-bold text-sm mr-3">3</span>
+                <span class="text-gray-700 dark:text-gray-300 text-sm">Desarrollo – construimos tu solución</span>
+              </div>
+              <div class="flex items-center bg-white/60 dark:bg-slate-700/60 p-3 rounded-lg">
+                <span class="flex-shrink-0 w-8 h-8 bg-orange-100 dark:bg-orange-900 text-orange-600 dark:text-orange-400 rounded-full flex items-center justify-center font-bold text-sm mr-3">4</span>
+                <span class="text-gray-700 dark:text-gray-300 text-sm">Soporte – acompañamiento continuo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <div class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-600 text-white rounded-full font-semibold text-sm shadow-lg">
+            <span class="mr-2">✨</span>
+            50+ Pymes atendidas | 95% Satisfacción | 2–4 semanas de entrega
+          </div>
+        </div>
+      </div>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-blue-900/10 dark:to-indigo-900/10"></div>
     </Fragment>
   </Content>
 
@@ -214,42 +259,42 @@ const metadata = {
       {
         title: 'Frontend',
         description: 'React, TypeScript, Tailwind CSS, Next.js',
-        icon: 'flat-color-icons:template',
+        icon: 'tabler:brand-react',
       },
       {
         title: 'Backend',
         description: 'Node.js, Python, PostgreSQL, MongoDB',
-        icon: 'flat-color-icons:database',
+        icon: 'tabler:database',
       },
       {
         title: 'Cloud & DevOps',
         description: 'AWS, Docker, Git, CI/CD',
-        icon: 'flat-color-icons:synchronize',
+        icon: 'tabler:cloud',
       },
       {
         title: 'Herramientas',
         description: 'Figma, Jira, Slack, Notion',
-        icon: 'flat-color-icons:settings',
+        icon: 'tabler:tools',
       },
       {
         title: 'Rendimiento',
         description: 'Optimización y velocidad garantizada',
-        icon: 'flat-color-icons:approval',
+        icon: 'tabler:rocket',
       },
       {
         title: 'Seguridad',
         description: 'Protección de datos empresariales',
-        icon: 'flat-color-icons:privacy',
+        icon: 'tabler:shield',
       },
       {
         title: 'Escalabilidad',
         description: 'Crece junto con tu negocio',
-        icon: 'flat-color-icons:ratings',
+        icon: 'tabler:trending-up',
       },
     ]}
   >
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 dark:from-slate-900 dark:via-slate-800 dark:to-blue-900"></div>
     </Fragment>
   </Features2>
 
@@ -262,15 +307,15 @@ const metadata = {
     subtitle="Conoce cómo hemos transformado negocios con tecnología"
     items={[
       {
-        title: 'Logística Chile',
+        title: 'Logística Chile 🚚',
         description: 'Sistema de gestión logística (React, Node.js, PostgreSQL) → reducción 30% costos, 40% eficiencia',
       },
       {
-        title: 'Retail Nacional',
+        title: 'Retail Nacional 🛍️',
         description: 'E-commerce (Next.js, TypeScript, MongoDB) → ventas 24/7, integración pasarelas, analytics avanzado',
       },
       {
-        title: 'Manufactura',
+        title: 'Manufactura 🏭',
         description: 'Automatización productiva (Python, IoT, Machine Learning) → reducción 50% defectos, +25% productividad',
       },
     ]}
@@ -280,12 +325,33 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Impacto en Pymes</h3>
-      <p class="text-muted">50+ proyectos completados, 95% satisfacción, 30% ahorro, 2–4 semanas entrega</p>
+      <div class="bg-white/90 dark:bg-slate-800/90 p-6 rounded-2xl backdrop-blur-sm border border-gray-200 dark:border-slate-700 shadow-xl">
+        <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-4 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">Impacto en Pymes</h3>
+        <p class="text-gray-600 dark:text-gray-300 mb-4 text-lg">Resultados reales que transforman negocios</p>
+        
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+          <div class="bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 p-4 rounded-lg border border-blue-200 dark:border-blue-700">
+            <div class="text-2xl font-bold text-blue-600 dark:text-blue-400">50+</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">Proyectos</div>
+          </div>
+          <div class="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 p-4 rounded-lg border border-green-200 dark:border-green-700">
+            <div class="text-2xl font-bold text-green-600 dark:text-green-400">95%</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">Satisfacción</div>
+          </div>
+          <div class="bg-gradient-to-br from-orange-50 to-orange-100 dark:from-orange-900/30 dark:to-orange-800/30 p-4 rounded-lg border border-orange-200 dark:border-orange-700">
+            <div class="text-2xl font-bold text-orange-600 dark:text-orange-400">30%</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">Ahorro</div>
+          </div>
+          <div class="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/30 dark:to-purple-800/30 p-4 rounded-lg border border-purple-200 dark:border-purple-700">
+            <div class="text-2xl font-bold text-purple-600 dark:text-purple-400">2-4</div>
+            <div class="text-sm text-gray-600 dark:text-gray-400">Semanas</div>
+          </div>
+        </div>
+      </div>
     </Fragment>
 
     <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+      <div class="absolute inset-0 bg-gradient-to-br from-green-50 via-blue-50 to-teal-50 dark:from-slate-900 dark:via-green-900/10 dark:to-blue-900/10"></div>
     </Fragment>
   </Content>
 
