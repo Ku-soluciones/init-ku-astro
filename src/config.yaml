@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: KU Soluciones
+  site: 'https://www.ku-soluciones.cl'
   base: '/'
   trailingSlash: false
 
@@ -9,27 +9,44 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: KU Soluciones - Software a medida para pymes en Chile
+    template: '%s | KU Soluciones - Desarrolladores Tecnológicos Chile'
+  description: "🚀 Especialistas en automatización de procesos en Chile y soluciones digitales personalizadas para empresas que quieren crecer con tecnología. Software a medida para pymes chilenas con soporte local."
+  keywords: 
+    - software a medida para pymes
+    - automatización de procesos en Chile
+    - soluciones digitales personalizadas
+    - desarrolladores tecnológicos en Chile
+    - aplicaciones web Chile
+    - sistemas de gestión empresarial
+    - desarrollo software Chile
+    - pymes Chile tecnología
+    - APIs personalizadas Chile
+    - soporte técnico Chile
+  author: KU Soluciones
+  publisher: KU Soluciones
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: KU Soluciones
+    locale: es_CL
     images:
-      - url: '~/assets/images/default.png'
+      - url: 'https://res.cloudinary.com/dddfx1xwt/image/upload/v1750340412/logoku_wg4bgn.webp'
         width: 1200
         height: 628
+        alt: KU Soluciones - Software a medida para pymes en Chile
     type: website
   twitter:
-    handle: '@arthelokyo'
-    site: '@arthelokyo'
+    handle: '@kusoluciones'
+    site: '@kusoluciones'
     cardType: summary_large_image
+    creator: '@kusoluciones'
 
 i18n:
-  language: en
+  language: es
   textDirection: ltr
+  locale: es-CL
 
 apps:
   blog:
@@ -38,30 +55,27 @@ apps:
 
     post:
       isEnabled: true
-      permalink: '/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
+      permalink: '/blog/%slug%' # Variables: %slug%, %year%, %month%, %day%, %hour%, %minute%, %second%, %category%
       robots:
         index: true
 
     list:
       isEnabled: true
-      pathname: 'blog' # Blog main path, you can change this to "articles" (/articles)
+      pathname: 'blog' # Blog main path
       robots:
         index: true
 
     category:
       isEnabled: true
-      pathname: 'category' # Category main path /category/some-category, you can change this to "group" (/group/some-category)
+      pathname: 'categoria' # Category main path /categoria/some-category, you can change this to "topics" (/topics/some-category)
       robots:
         index: true
 
     tag:
       isEnabled: true
-      pathname: 'tag' # Tag main path /tag/some-tag, you can change this to "topics" (/topics/some-category)
+      pathname: 'etiqueta' # Tag main path /etiqueta/some-tag, you can change this to "topics" (/topics/some-tag)
       robots:
-        index: false
-
-    isRelatedPostsEnabled: true
-    relatedPostsCount: 4
+        index: true
 
 analytics:
   vendors:

@@ -11,13 +11,145 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import Brands from '~/components/widgets/Brands.astro';
 
 const metadata = {
-  title: 'KU Soluciones - Software a medida para pymes en Chile',
-  description: 'Especialistas en automatización de procesos en Chile y soluciones digitales personalizadas para empresas que quieren crecer con tecnología.',
+  title: 'Software a medida para pymes en Chile - KU Soluciones',
+  description: 'Especialistas en automatización de procesos en Chile y soluciones digitales personalizadas para empresas que quieren crecer con tecnología. Desarrollamos software a medida para pymes con soporte local.',
+  keywords: 'software a medida para pymes, automatización de procesos en Chile, soluciones digitales personalizadas, desarrolladores tecnológicos en Chile, aplicaciones web Chile, sistemas de gestión empresarial',
+  canonical: 'https://www.ku-soluciones.cl',
+  openGraph: {
+    type: 'website',
+    locale: 'es_CL',
+    url: 'https://www.ku-soluciones.cl',
+    siteName: 'KU Soluciones',
+    title: 'Software a medida para pymes en Chile - KU Soluciones',
+    description: 'Especialistas en automatización de procesos en Chile y soluciones digitales personalizadas para empresas que quieren crecer con tecnología.',
+    images: [
+      {
+        url: 'https://res.cloudinary.com/dddfx1xwt/image/upload/v1750340412/logoku_wg4bgn.webp',
+        width: 1200,
+        height: 628,
+        alt: 'KU Soluciones - Software a medida para pymes en Chile'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@kusoluciones',
+    creator: '@kusoluciones',
+    title: 'Software a medida para pymes en Chile - KU Soluciones',
+    description: 'Especialistas en automatización de procesos en Chile y soluciones digitales personalizadas.',
+    images: 'https://res.cloudinary.com/dddfx1xwt/image/upload/v1750340412/logoku_wg4bgn.webp'
+  },
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
+  <!-- Structured Data JSON-LD -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "KU Soluciones",
+      "description": "Especialistas en automatización de procesos en Chile y soluciones digitales personalizadas para empresas que quieren crecer con tecnología.",
+      "url": "https://www.ku-soluciones.cl",
+      "logo": "https://res.cloudinary.com/dddfx1xwt/image/upload/v1750340412/logoku_wg4bgn.webp",
+      "image": "https://res.cloudinary.com/dddfx1xwt/image/upload/v1750340412/logoku_wg4bgn.webp",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+56912345678",
+        "contactType": "customer service",
+        "availableLanguage": ["Spanish"],
+        "areaServed": "CL"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CL",
+        "addressRegion": "Región Metropolitana",
+        "addressLocality": "Santiago"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/company/kusoluciones",
+        "https://twitter.com/kusoluciones"
+      ],
+      "foundingDate": "2020",
+      "numberOfEmployees": "10-50",
+      "industry": "Software Development",
+      "services": [
+        "Software a medida para pymes",
+        "Automatización de procesos",
+        "Soluciones digitales personalizadas",
+        "Desarrollo de aplicaciones web",
+        "APIs personalizadas",
+        "Soporte técnico"
+      ]
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "KU Soluciones",
+      "url": "https://www.ku-soluciones.cl",
+      "description": "Software a medida para pymes en Chile - Desarrolladores tecnológicos especializados en automatización de procesos",
+      "inLanguage": "es-CL",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://www.ku-soluciones.cl/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "KU Soluciones - Software a medida para pymes",
+      "description": "Desarrolladores tecnológicos especializados en automatización de procesos en Chile y soluciones digitales personalizadas para pymes chilenas.",
+      "url": "https://www.ku-soluciones.cl",
+      "telephone": "+56912345678",
+      "priceRange": "$$",
+      "image": "https://res.cloudinary.com/dddfx1xwt/image/upload/v1750340412/logoku_wg4bgn.webp",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CL",
+        "addressRegion": "Región Metropolitana"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -33.4489,
+        "longitude": -70.6693
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday", 
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "serviceType": [
+        "Software Development",
+        "Process Automation",
+        "Digital Solutions",
+        "Web Applications",
+        "API Development"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Chile"
+      }
+    }
+  </script>
+
   <!-- Hero Widget ******************* -->
 
   <Hero

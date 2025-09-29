@@ -1,2 +1,20 @@
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://www.ku-soluciones.cl/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+Disallow: /_astro/
+
+# Allow important pages
+Allow: /
+Allow: /services
+Allow: /about  
+Allow: /contact
+Allow: /blog/
+Allow: /portfolio
+
+# Crawl-delay
+Crawl-delay: 1
